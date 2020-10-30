@@ -41,9 +41,9 @@ defmodule NervesSystemPmrRpi4.MixProject do
   defp nerves_package do
     [
       type: :system,
-      artifact_sites: [
-        {:github_releases, "#{@github_organization}/#{@app}"}
-      ],
+   #   artifact_sites: [
+   #     {:github_releases, "#{@github_organization}/#{@app}"}
+   #   ],
       build_runner_opts: build_runner_opts(),
       platform: Nerves.System.BR,
       platform_config: [
@@ -66,6 +66,7 @@ defmodule NervesSystemPmrRpi4.MixProject do
   defp description do
     """
     Nerves System - Raspberry Pi 4
+    with additions from PMR
     """
   end
 
